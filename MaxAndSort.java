@@ -12,8 +12,10 @@ class MaxAndSort {
 	}
 
 	int getMaxValue(int[] integers) {
-		if (integers.length == 0)
+		if (integers.length == 0) {
 			System.out.println("Cannot find max value, array empty");
+			return -1;
+		}
 
 		int maxValue = integers[0];
 		for (int item : integers) {
